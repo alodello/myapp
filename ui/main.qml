@@ -24,7 +24,19 @@ ApplicationWindow{
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.bottom: parent.bottom
-            implicitWidth: window.width  / 2
+            implicitWidth: window.width  / 3
+            text: "Close"
+            highlighted: true
+            font.pointSize: 18
+            Material.accent:  Material.Orange
+            onClicked: window.close();
+        }
+        Button{
+            id: button2
+            anchors.top: parent.top
+            anchors.left: button1.right
+            anchors.bottom: parent.bottom
+            implicitWidth: button1.implicitWidth
             text: "Reboot"
             highlighted: true
             font.pointSize: 18
@@ -32,9 +44,9 @@ ApplicationWindow{
             onClicked: backend.reboot();
         }
         Button{
-            id:button2
+            id:button3
             anchors.top: parent.top
-            anchors.left: button1.right
+            anchors.left: button2.right
             anchors.right: parent.right
             anchors.bottom: parent.bottom
             text: "Shutdown"

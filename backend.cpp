@@ -1,10 +1,13 @@
 #include "backend.h"
 #include <QDebug>
 #include <QProcess>
+#include <QTimer>
 Backend::Backend(QObject *parent)
     : QObject{parent}
 {
-
+    QTimer::singleShot(120000, [=]{
+        exit(-1);
+    });
 }
 
 Backend::~Backend()
