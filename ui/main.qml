@@ -8,9 +8,11 @@ ApplicationWindow{
 
     title: "myApp"
     visible: true
-    visibility: Qt.WindowFullScreen
-    minimumWidth: window.width
-    minimumHeight: window.height
+    width: 1280
+    height: 720
+//    visibility: Qt.WindowFullScreen
+//    minimumWidth: window.width
+//    minimumHeight: window.height
     Material.theme: Material.Light
     Material.accent: Material.Blue
 
