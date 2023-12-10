@@ -1,4 +1,5 @@
 #include <QGuiApplication>
+#include <QCoreApplication>
 #include <QQmlApplicationEngine>
 #include <QQuickStyle>
 #include "backend.h"
