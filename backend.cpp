@@ -5,9 +5,9 @@
 Backend::Backend(QObject *parent)
     : QObject{parent}
 {
-    QTimer::singleShot(120000, [=]{
-        exit(-1);
-    });
+    //QTimer::singleShot(120000, [=]{
+     //   exit(-1);
+    //});
 }
 
 Backend::~Backend()
